@@ -1,0 +1,219 @@
+.about{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:80px;
+    margin:80px 170px;
+}
+
+.about-title{
+    display: flex;
+    position: relative;
+    align-items: center;
+
+}
+
+.about-title h1{
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+    text-shadow: 4px 6px 10px rgba(123, 246, 236, 0.8);
+}
+
+
+.about-sections{
+    display: flex;
+    gap: 80px;
+}
+
+.about-right{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.about-para{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.about-skills{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.about-skill{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.about-skill p{
+    min-width: 300px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.about-skill hr{
+    outline: none;
+    border: none;
+    width: 50%;
+    height: 8px;
+    border-radius: 50px;
+    background: linear-gradient(264deg , #DF8908 -5.09% , #B415FF 106.28%);
+}
+
+.about-skill:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+.logoo {
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    transition: 0.5s;
+}
+
+.profile {
+    width: 300px; 
+    height: 350px; 
+    border-radius: 20%; 
+    object-fit: cover; 
+    object-fit: cover; 
+    transition: 0.5s;
+}
+
+.profile:hover{
+    transform: scale(1.05);
+}
+
+
+.achi{
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    gap: 250px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.git-hub{
+    padding: 25px 45px;
+    border-radius: 50px;
+    background: linear-gradient(264deg , #DF8908 -5.09% , #B415FF 106.28%);
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.Linked-in{
+    color: white;
+    text-decoration: none;
+    margin-left: 50px;
+    padding: 20px 35px;
+    border-radius: 50px;
+    background: linear-gradient(264deg , #DF8908 -5.09% , #B415FF 106.28%);
+    cursor: pointer;
+}
+
+
+.git-hub:hover{
+    border: 3px solid #0b7b91;
+    box-shadow: 0 8px 15px rgba(161, 213, 227, 0.4);
+}
+
+.Linked-in:hover{
+    border: 3px solid rgb(26, 180, 5);
+    box-shadow: 0 8px 15px rgba(161, 213, 227, 0.4);
+}
+
+
+@media(max-width:768px){
+    .about{
+        gap: 80px;
+        margin: 50px 70px;
+        align-items: start;
+    }
+
+    .logoo{
+        margin-right: 10px;
+    }
+
+    .about-title h1{
+        font-size: 50px;
+        padding: 0;
+    }
+
+    .about-sections{
+        flex-direction: column;
+    }
+
+    .about-left{
+        display: none;
+    }
+
+    .about-para{
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .about-skill{
+        gap: 20px;
+        align-items: center;
+        }
+
+    .about-skill p{
+        font-size: 20px;
+    }
+
+    .about-skill hr{
+        height: 6px;
+    }
+
+    .aabout-achievments{
+        justify-content: space-between;
+    }
+
+    .aabout-achievment{
+        gap: 10px;
+    }
+
+    .achi{
+        gap: 16px;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+
+
+    .git-hub{
+        padding: 20px 30px;
+        border-radius: 40px;
+    }
+    .Linked-in{
+        padding: 20px 30px;
+        border-radius: 40px;
+    }
+
+}
